@@ -8,18 +8,18 @@
 
 import UIKit
 
-class WeatherDataViewController: UIViewController {
+public class WeatherDataViewController: UIViewController {
     
-    @IBOutlet internal var temperatureLabel: UILabel!
-    @IBOutlet internal var summaryLabel: UILabel!
-    @IBOutlet internal var timeLabel: UILabel!
-    @IBOutlet internal var humidityLabel: UILabel!
-    @IBOutlet internal var precipitationLabel: UILabel!
-    @IBOutlet internal var locationLabel: UILabel!
+    @IBOutlet public var temperatureLabel: UILabel!
+    @IBOutlet public var summaryLabel: UILabel!
+    @IBOutlet public var timeLabel: UILabel!
+    @IBOutlet public var humidityLabel: UILabel!
+    @IBOutlet public var precipitationLabel: UILabel!
+    @IBOutlet public var locationLabel: UILabel!
     
-    internal var weatherData: WeatherData?
+    public var weatherData: WeatherData?
     
-    internal func updateData() {
+    public func updateData() {
         if let unwrappedWD = weatherData {
             
             var celciusValue = ((unwrappedWD.temperature - 32)/2)
@@ -32,7 +32,7 @@ class WeatherDataViewController: UIViewController {
         }
     }
     
-    internal func getWeatherData(latLong: String, completion: (error: NSError?) -> ()) {
+    public func getWeatherData(latLong: String, completion: (error: NSError?) -> ()) {
         WeatherService.sharedInstance.fetchWeatherData(latLong, completion: { (data, error) -> () in
             dispatch_async(dispatch_get_main_queue()) {
                 self.weatherData = data

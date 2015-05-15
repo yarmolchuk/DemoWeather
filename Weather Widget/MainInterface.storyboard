@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="M4Y-Lb-cyx">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="RobotoCondensedRegular.ttf">
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+            <string>RobotoCondensed-Regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--Today View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" customClass="TodayViewController" customModule="Weather_Widget" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Ft6-oW-KC0"/>
+                        <viewControllerLayoutGuide type="bottom" id="FKl-LY-JtV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="siG-g8-SG3">
+                                <rect key="frame" x="201" y="18" width="62" height="27"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="ocP-4g-5qe"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="20"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.56862745100000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qdn-QM-37q">
+                                <rect key="frame" x="275" y="15" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="0tq-mh-QZt"/>
+                                    <constraint firstAttribute="width" constant="30" id="MD9-Pv-kQE"/>
+                                </constraints>
+                                <state key="normal" image="caret">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showMore:" destination="M4Y-Lb-cyx" eventType="touchUpInside" id="v1P-zG-wIs"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kiev, Ukraine" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2XF-U8-SEh">
+                                <rect key="frame" x="20" y="18" width="173" height="27"/>
+                                <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="20"/>
+                                <color key="textColor" red="0.25882352939999997" green="0.56862745100000001" blue="0.82745098039999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SkE-Nu-E4H" userLabel="MoreDetailsContainer">
+                                <rect key="frame" x="0.0" y="50" width="320" height="220"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfa-ZA-Wba">
+                                        <rect key="frame" x="30" y="20" width="130" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="130" id="OHR-Ge-Iem"/>
+                                            <constraint firstAttribute="height" constant="21" id="YEQ-ow-ZN5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HUMIDITY:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iWZ-Ja-4s6">
+                                        <rect key="frame" x="30" y="61" width="128" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="579-ZT-SxR"/>
+                                            <constraint firstAttribute="height" constant="21" id="yQX-7s-1A0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRECIPITATION:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81a-Uo-en9">
+                                        <rect key="frame" x="30" y="102" width="128" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="8O7-Vl-5US"/>
+                                            <constraint firstAttribute="height" constant="21" id="cLt-Ob-G8i"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostly Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gTS-yF-Kj6">
+                                        <rect key="frame" x="180" y="20" width="110" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="Ff0-s1-JpN"/>
+                                            <constraint firstAttribute="height" constant="21" id="OI9-g4-pSz"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.65" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UVr-P4-0K5">
+                                        <rect key="frame" x="180" y="61" width="110" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="Zd5-K2-Nc1"/>
+                                            <constraint firstAttribute="height" constant="21" id="vG2-Mg-am5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.10" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jxN-8K-z5W">
+                                        <rect key="frame" x="180" y="102" width="110" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="110" id="2gf-1c-0VY"/>
+                                            <constraint firstAttribute="height" constant="21" id="fNq-sM-KEZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="02:00 PM" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cr4-fJ-Ep0">
+                                        <rect key="frame" x="180" y="143" width="110" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="DRx-yd-5Zv"/>
+                                            <constraint firstAttribute="width" constant="110" id="v0h-3a-6ZD"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="16"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAST UPDATED:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V3K-Br-c3w">
+                                        <rect key="frame" x="30" y="143" width="129" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="129" id="6nw-9N-KpP"/>
+                                            <constraint firstAttribute="height" constant="21" id="tHX-aM-M0s"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="15"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="iWZ-Ja-4s6" firstAttribute="leading" secondItem="81a-Uo-en9" secondAttribute="leading" id="4P7-dB-Lyf"/>
+                                    <constraint firstItem="V3K-Br-c3w" firstAttribute="top" secondItem="81a-Uo-en9" secondAttribute="bottom" constant="20" id="8R7-fp-m2R"/>
+                                    <constraint firstItem="xfa-ZA-Wba" firstAttribute="top" secondItem="SkE-Nu-E4H" secondAttribute="top" constant="20" id="BAK-ht-Hh5"/>
+                                    <constraint firstAttribute="height" constant="220" id="CWf-R0-Xgz"/>
+                                    <constraint firstItem="jxN-8K-z5W" firstAttribute="top" secondItem="UVr-P4-0K5" secondAttribute="bottom" constant="20" id="DCw-bY-2JF"/>
+                                    <constraint firstItem="gTS-yF-Kj6" firstAttribute="leading" secondItem="xfa-ZA-Wba" secondAttribute="trailing" constant="20" id="Luy-rz-daT"/>
+                                    <constraint firstItem="cr4-fJ-Ep0" firstAttribute="leading" secondItem="UVr-P4-0K5" secondAttribute="leading" id="Pgu-A7-7gu"/>
+                                    <constraint firstItem="gTS-yF-Kj6" firstAttribute="top" secondItem="SkE-Nu-E4H" secondAttribute="top" constant="20" id="T1h-2Z-SPf"/>
+                                    <constraint firstItem="iWZ-Ja-4s6" firstAttribute="leading" secondItem="xfa-ZA-Wba" secondAttribute="leading" id="UGL-gB-60y"/>
+                                    <constraint firstItem="cr4-fJ-Ep0" firstAttribute="leading" secondItem="jxN-8K-z5W" secondAttribute="leading" id="Wkn-P8-col"/>
+                                    <constraint firstAttribute="centerX" secondItem="xfa-ZA-Wba" secondAttribute="centerX" constant="65" id="blo-Pm-NMj"/>
+                                    <constraint firstItem="cr4-fJ-Ep0" firstAttribute="top" secondItem="jxN-8K-z5W" secondAttribute="bottom" constant="20" id="cNv-S4-S1i"/>
+                                    <constraint firstItem="UVr-P4-0K5" firstAttribute="top" secondItem="gTS-yF-Kj6" secondAttribute="bottom" constant="20" id="erS-B8-fZ8"/>
+                                    <constraint firstItem="iWZ-Ja-4s6" firstAttribute="leading" secondItem="V3K-Br-c3w" secondAttribute="leading" id="mNe-EG-vTM"/>
+                                    <constraint firstItem="iWZ-Ja-4s6" firstAttribute="top" secondItem="xfa-ZA-Wba" secondAttribute="bottom" constant="20" id="vGo-j3-T6a"/>
+                                    <constraint firstItem="cr4-fJ-Ep0" firstAttribute="leading" secondItem="gTS-yF-Kj6" secondAttribute="leading" id="vbK-2L-A0h"/>
+                                    <constraint firstItem="81a-Uo-en9" firstAttribute="top" secondItem="iWZ-Ja-4s6" secondAttribute="bottom" constant="20" id="xn5-oT-aJg"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="2XF-U8-SEh" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" constant="20" id="FbP-td-vic"/>
+                            <constraint firstAttribute="trailing" secondItem="Qdn-QM-37q" secondAttribute="trailing" constant="15" id="Gg3-dR-GRa"/>
+                            <constraint firstAttribute="trailing" secondItem="SkE-Nu-E4H" secondAttribute="trailing" id="IM8-YR-Hg4"/>
+                            <constraint firstItem="siG-g8-SG3" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="18" id="Lmd-9E-Zf3"/>
+                            <constraint firstItem="siG-g8-SG3" firstAttribute="leading" secondItem="2XF-U8-SEh" secondAttribute="trailing" constant="8" id="PFG-1X-1dY"/>
+                            <constraint firstItem="Qdn-QM-37q" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="15" id="SyE-PV-BlP"/>
+                            <constraint firstItem="FKl-LY-JtV" firstAttribute="top" secondItem="SkE-Nu-E4H" secondAttribute="bottom" priority="250" id="XX3-ov-fme"/>
+                            <constraint firstItem="SkE-Nu-E4H" firstAttribute="leading" secondItem="S3S-Oj-5AN" secondAttribute="leading" id="Xtt-oV-p2C"/>
+                            <constraint firstItem="Qdn-QM-37q" firstAttribute="leading" secondItem="siG-g8-SG3" secondAttribute="trailing" constant="12" id="dPj-EE-A1p"/>
+                            <constraint firstItem="2XF-U8-SEh" firstAttribute="top" secondItem="Ft6-oW-KC0" secondAttribute="bottom" constant="18" id="gDa-2n-dIf"/>
+                            <constraint firstItem="SkE-Nu-E4H" firstAttribute="top" secondItem="S3S-Oj-5AN" secondAttribute="top" constant="50" id="hJn-GF-G5f"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="270"/>
+                    <connections>
+                        <outlet property="humidityLabel" destination="UVr-P4-0K5" id="uUK-uX-72u"/>
+                        <outlet property="locationLabel" destination="2XF-U8-SEh" id="u8w-Ud-okQ"/>
+                        <outlet property="moreDetailsContainerHeightConstraint" destination="CWf-R0-Xgz" id="IXc-kP-rc6"/>
+                        <outlet property="precipitationLabel" destination="jxN-8K-z5W" id="bYs-Ju-2s8"/>
+                        <outlet property="showMoreButton" destination="Qdn-QM-37q" id="3jg-HH-N5Z"/>
+                        <outlet property="summaryLabel" destination="gTS-yF-Kj6" id="68x-JH-ABr"/>
+                        <outlet property="temperatureLabel" destination="siG-g8-SG3" id="ZAi-z3-HVv"/>
+                        <outlet property="timeLabel" destination="cr4-fJ-Ep0" id="6PJ-fO-NRU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="327" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="caret" width="14" height="9"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -33,9 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mostly Cloudy" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUd-HI-uR3">
                                 <rect key="frame" x="170" y="353" width="134" height="27"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="27" id="LAa-C0-pVl"/>
                                     <constraint firstAttribute="height" constant="27" id="MW3-4A-b5d"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="134" id="WyQ-2S-ig1"/>
                                     <constraint firstAttribute="width" constant="134" id="X67-S7-GFn"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="20"/>
@@ -55,10 +53,8 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SUMMARY:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ze9-Dh-ecw">
                                 <rect key="frame" x="22" y="361" width="117" height="19"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="117" id="Qdz-se-Rqk"/>
                                     <constraint firstAttribute="height" constant="19" id="RZH-Bc-DGl"/>
                                     <constraint firstAttribute="width" constant="117" id="UhP-UO-ZGl"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="19" id="gj2-b8-1Nh"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="RobotoCondensed-Regular" family="Roboto Condensed" pointSize="14"/>
                                 <color key="textColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
